@@ -17,6 +17,23 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let prime = [2]
+let check = []
+let a = 0
+for(i=1; i<201; i++){
+  for(j=i-1; j>1; j--){
+    check.push(i%j)
+    if(j===2){
+      if(check.includes(0)){
+        a += 1;
+      } else {
+        prime.push(i);
+      }
+      check = []
+    }
+  }
+}
+console.log(prime);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

@@ -13,6 +13,11 @@ function exercise10() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let call = '#';
+  for(i=1; i<8; i++){
+    console.log(call);
+    call = `${call}#`
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

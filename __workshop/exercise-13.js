@@ -20,6 +20,13 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+let fibo = [0,1]
+let a = 0
+for(i=2; i<50; i++){
+  a = fibo[i-2]+fibo[i-1]
+  fibo.push(a);
+}
+console.log(a);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
